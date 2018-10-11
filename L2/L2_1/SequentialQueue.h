@@ -9,7 +9,7 @@ using namespace std;
 struct SequentialQueue
 {
 	int tail = 0; //initialise the position of the tail of the "queue" to 0 to avoid any unknown error if the user forgets to initialise it
-	int data[ QUEUESIZE ]; //an array to present a sequential queue
+	int data[ QUEUESIZE ]; //an array to represent a sequential queue
 
 	/*Initialise the position of the tail of the "queue".*/
 	void Initialise()
