@@ -2,14 +2,13 @@
 
 #ifndef SEQUENTIALQUEUE_H
 #define SEQUENTIALQUEUE_H
-constexpr auto QUEUESIZE = 10; //determine that the position of the tail of the "queue" ranges from 0 to 9 (not equal to "QUEUESIZE")
 #include <iostream>
 using namespace std;
+constexpr auto QUEUESIZE = 10; //determine that the position of the tail of the "queue" ranges from 0 to 9 (not equal to "QUEUESIZE")
 
 struct SequentialQueue
 {
 	int tail = 0; //initialise the position of the tail of the "queue" to 0 to avoid any unknown error if the user forgets to initialise it
-	int data[ QUEUESIZE ]; //an array to represent a sequential queue
 
 	/*Initialise the position of the tail of the "queue".*/
 	void Initialise()
@@ -71,5 +70,8 @@ struct SequentialQueue
 
 		return valuePopped;
 	} //end function Pop
+
+private:
+	int data[ QUEUESIZE ]; //an array representing a sequential queue
 }; //end struct SequentialQueue
 #endif

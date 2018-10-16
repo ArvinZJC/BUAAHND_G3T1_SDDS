@@ -2,14 +2,13 @@
 
 #ifndef CIRCULARQUEUE_H
 #define CIRCULARQUEUE_H
-constexpr auto QUEUESIZE = 10;
 #include <iostream>
 using namespace std;
+constexpr auto QUEUESIZE = 10;
 
 struct CircularQueue
-{
+{	
 	int head = 0, tail = 0, counterForItems = 0; //respectively initialise the positions of the head and the tail of the "queue", and the counter for recording the number of integers stored to 0 to avoid any unknown error if the user forgets to initialise them
-	int data[ QUEUESIZE ]; //an array to represent a circular queue
 
 	/*Get the position of the value planned to pop.*/
 	int getPositionOfValuePopped() { return ( head + QUEUESIZE - 1 ) % QUEUESIZE; } //end function getPositionOfValuePopped
@@ -91,5 +90,8 @@ struct CircularQueue
 
 		return valuePopped;
 	} //end function Pop
+
+private:
+	int data[ QUEUESIZE ]; //an array representing a circular queue
 }; //end struct CircularQueue
 #endif
