@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L3", "L3", "{ED674D21-DE83-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L3_1", "L3\L3_1\L3_1.vcxproj", "{2057E531-C69F-4CC2-9D30-1095C6838966}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L5", "L5", "{DEB0A88C-610F-4C98-A118-6385E589AB79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
