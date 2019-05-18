@@ -22,7 +22,7 @@ using System.Text.RegularExpressions;
 namespace Exercise4_CSharp
 {
     /// <summary>
-    /// Extending from class Form, the partial class <see cref="FrmFileExtensions"/> contains control events of the form and relevant methods.
+    /// Extending from class <see cref="Form"/>, the partial class <see cref="FrmFileExtensions"/> contains control events of the form and relevant methods.
     /// </summary>
     public partial class FrmFileExtensions : Form
     {
