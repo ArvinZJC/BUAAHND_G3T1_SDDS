@@ -22,10 +22,15 @@ using System.Text.RegularExpressions;
 namespace Exercise4_CSharp
 {
     /// <summary>
-    /// Extending from class <see cref="Form"/>, the partial class <see cref="FrmFileExtensions"/> contains control events of the form and relevant methods.
+    /// Extending from class <see cref="Form"/>, the partial class <see cref="FrmFileExtensions"/> contains relevant methods and control events of the form.
     /// </summary>
     public partial class FrmFileExtensions : Form
     {
+        public FrmFileExtensions()
+        {
+            InitializeComponent();
+        } // end constructor FrmFileExtensions
+
         #region Members
         private static readonly FileStream datafile = new FileStream(Application.StartupPath + @"\datafile.dat", FileMode.OpenOrCreate, FileAccess.ReadWrite); // the file stream for the data file "datafile.dat"
         private static readonly BinaryFormatter binaryData = new BinaryFormatter(); // a binary formatter for serialising and deserialising data
@@ -37,16 +42,6 @@ namespace Exercise4_CSharp
         private static readonly string regexForDefaultProgram = "^[A-Za-z0-9]+$"; // a regular expression for a default program
         private static string[] data; // store data groups (a file extension=a default program) converted from "contents"
         #endregion Members
-
-        #region Constructor
-        /// <summary>
-        /// Non-parameter constructor that initialises controls on the form.
-        /// </summary>
-        public FrmFileExtensions()
-        {
-            InitializeComponent();
-        } // end constructor FrmFileExtensions
-        #endregion Constructor
 
         #region Private Methods
         // specify a universal status selection for specified controls
