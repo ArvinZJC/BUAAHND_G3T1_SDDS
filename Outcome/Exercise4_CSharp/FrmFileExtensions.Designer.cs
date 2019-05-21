@@ -16,7 +16,7 @@ namespace Exercise4_CSharp
                 components.Dispose();
             
             base.Dispose(disposing);
-        }
+        } // end method Dispose
 
         #region Windows Form Designer Generated Code
         /// <summary>
