@@ -1,5 +1,4 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -10,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Arvin Zhao")]
 [assembly: AssemblyProduct("File Extensions")]
-[assembly: AssemblyCopyright("Copyright ©  ArvinZJC 2018")]
+[assembly: AssemblyCopyright("© 2018 Arvin Zhao")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
