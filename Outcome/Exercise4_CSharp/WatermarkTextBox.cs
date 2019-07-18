@@ -48,7 +48,7 @@ namespace Exercise4_CSharp
         /// <param name="watermarkText">The watermark displayed inside the text box.</param>
         private void SetWatermark(string watermarkText)
         {
-            SendMessage(Handle, EM_SETCUEBANNER, 0, watermarkText);
+            SendMessage(this.Handle, EM_SETCUEBANNER, 0, watermarkText);
         } // end method SetWatermark
     } // end partial class WatermarkTextBox
 } // end namespace Exercise4_CSharp
