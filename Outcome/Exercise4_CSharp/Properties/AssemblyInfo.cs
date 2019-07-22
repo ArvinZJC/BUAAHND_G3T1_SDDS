@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Exercise4_CSharp")]
-[assembly: AssemblyDescription("This program finishes the specified task with file extensions and associated default programs stored.")]
+[assembly: AssemblyDescription("This assembly contains code for finishing the specified task with file extensions and associated default programs stored.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Arvin Zhao")]
 [assembly: AssemblyProduct("File Extensions")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.5.0.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
 [assembly: AssemblyFileVersion("1.5.0.0")]
