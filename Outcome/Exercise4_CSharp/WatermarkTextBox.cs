@@ -27,25 +27,25 @@ namespace Exercise4_CSharp
 
         private const uint ECM_FIRST = 0x1500;
         private const uint EM_SETCUEBANNER = ECM_FIRST + 1;
+        private string watermarkText; // the watermark displayed inside a text box
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
-        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, uint wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
-
-        private string watermarkText;
+        /// <summary>
+        /// The text of a watermark.
+        /// </summary>
         public string WatermarkText
         {
             get { return watermarkText; } // end get
             set
             {
                 watermarkText = value;
-                SetWatermark(watermarkText); // call the specified method to set a watermark inside a text box
+                SetWatermark(watermarkText); // call the specified method to set a watermark displayed inside a text box
             } // end set
-        } // end string WatermarkText
+        }
 
-        /// <summary>
-        /// Set a watermark inside a text box.
-        /// </summary>
-        /// <param name="watermarkText">The watermark displayed inside the text box.</param>
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, uint wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
+
+        // set a watermark displayed in a text box
         private void SetWatermark(string watermarkText)
         {
             SendMessage(Handle, EM_SETCUEBANNER, 0, watermarkText);
