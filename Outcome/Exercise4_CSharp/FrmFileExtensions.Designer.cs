@@ -1,10 +1,8 @@
-using System.ComponentModel;
-
 namespace Exercise4_CSharp
 {
-    partial class FrmFileExtensions
+    public partial class FrmFileExtensions
     {
-        private IContainer components = null; // required designer variable
+        private System.ComponentModel.IContainer components = null; // required designer variable
 
         /// <summary>
         /// Clean up any resources being used.
