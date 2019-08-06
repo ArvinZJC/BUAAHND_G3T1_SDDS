@@ -22,7 +22,7 @@ namespace Exercise4_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            components = new Container();
+            components = new System.ComponentModel.Container();
         } // end method InitializeComponent
         #endregion Component Designer Generated Code
     } // end partial class WatermarkTextBox
