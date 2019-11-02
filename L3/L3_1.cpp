@@ -9,28 +9,23 @@ int listLength = sizeof(list) / sizeof(list[0]);
 /* Use bubble sort to sort a list in ascending order. */
 void BubbleSort()
 {
-	bool flag;
-	int temp;
-
-	for (int i = 0; i < listLength - 1; i++)
+	bool isSwapped;
+	
+	do
 	{
-		flag = true;
+		isSwapped = false;
 
-		for (int j = 0; j < listLength - 1 - i; j++)
+		for (int count = 0; count < listLength - 1; count++)
 		{
-			if (list[j] > list[j + 1])
+			if (list[count] > list[count + 1])
 			{
-				temp = list[j];
-				list[j] = list[j + 1];
-				list[j + 1] = temp;
-				flag = false;
+				int temp = list[count + 1];
+				list[count + 1] = list[count];
+				list[count] = temp;
+				isSwapped = true;
 			} // end if
 		} // end for
-		
-		// if the value of "flag" is "true", then stop looping to sort the list because it has already been an ordered one
-		if (flag)
-			break;
-	} // end for
+	} while (isSwapped == true); // if bubble sort doesn't perform any swaps, then the list is in sorted order
 } // end function BubbleSort
 
 /* Use binary search to find the specified key in a list. */
