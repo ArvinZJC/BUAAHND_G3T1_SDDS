@@ -1,4 +1,4 @@
-// program that uses binary search in a programmer-declared function to find the specified key in a list
+// program that uses bubble sort and binary search in programmer-declared functions to find the specified key in a list
 
 #include <iostream>
 using namespace std;
