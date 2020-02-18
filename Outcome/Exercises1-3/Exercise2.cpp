@@ -4,7 +4,7 @@
  * @Author: Arvin Zhao
  * @Date: 2018-12-04 09:12:47
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2019-05-06 19:50:44
+ * @LastEditTime: 2020-02-18 19:00:46
  */
 
 #include "Exercise1.h"
@@ -107,7 +107,7 @@ int main()
 {
     MyStack astack; // instant a MyStack object for testing an integer stack
     int valuePopped; // record the value popped from the stack
-
+    
     cout << "***** Testing an integer stack *****\n"
          << "The stack is empty? " << boolalpha << astack.isEmpty() << endl; // call the specified function in class MyStack to check if the stack is empty
     
@@ -122,5 +122,7 @@ int main()
     cout << "Popping the value of " << valuePopped << ".\n"
          << "The value of " << valuePopped << " should have been removed." << endl;
     
-    astack.display(); // call the specified function in class MyStack to display the information of the stack.
+    astack.display(); // call the specified function in class MyStack to display the information of the stack
+
+    return 0;
 } // end main

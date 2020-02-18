@@ -13,7 +13,7 @@ int main()
 
 	do
 	{
-		system("cls");
+		system("cls"); // clear the screen
 
 		cout << "  1. Initialise the position of the top of the \"stack\"\n"
 			 << "  2. Push new data to the \"stack\"\n"
@@ -28,7 +28,7 @@ int main()
 		case 1:
 			stack1.Initialise(); // call the specified function in struct Stack to initialise the position of the top of the "stack"
 			cout << "\nSuccessfully initialised!" << endl;
-			system("pause");
+			system("pause"); // display the result before clearing the screen
 			break;
 
 		case 2:

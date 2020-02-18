@@ -13,7 +13,7 @@ int main()
 
 	do
 	{
-		system("cls");
+		system("cls"); // clear the screen
 
 		cout << "  1. Initialise the position of the tail of the \"queue\"\n"
 			 << "  2. Push new data to the \"queue\"\n"
@@ -28,7 +28,7 @@ int main()
 		case 1:
 			queue1.Initialise(); // call the specified function in struct CircularQueue to initialise the positions of the head and the tail of the "queue", and the count for recording the number of integers stored
 			cout << "\nSuccessfully initialised!" << endl;
-			system("pause");
+			system("pause"); // display the result before clearing the screen
 			break;
 
 		case 2:

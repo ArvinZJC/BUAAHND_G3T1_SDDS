@@ -4,7 +4,7 @@
  * @Author: Arvin Zhao
  * @Date: 2018-12-04 18:47:44
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2019-05-06 19:49:34
+ * @LastEditTime: 2020-02-18 19:01:02
  */
 
 #include "Exercise1.h"
@@ -155,5 +155,7 @@ int main()
     cout << "Popping the value of " << valuePopped << ".\n"
          << "The value of " << valuePopped << " should have been removed." << endl;
     
-    astack.display(); // call the specified function in class MyLinkedStack to display the information of the stack.
+    astack.display(); // call the specified function in class MyLinkedStack to display the information of the stack
+
+    return 0;
 } // end main

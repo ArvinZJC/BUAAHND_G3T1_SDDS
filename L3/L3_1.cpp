@@ -75,6 +75,5 @@ int main()
 
 	OutputResult(BinarySearch(-7)); // first, call the specified function to use binary search to find -7 in the array named list; then, call the specified function to output the searching result
 
-	system("pause");
 	return 0;
 } // end main
