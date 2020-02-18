@@ -21,7 +21,7 @@
                 "args": [
                     "-ggdb",
                     "\"${file}\"",
-                    "--std=c++17",
+                    "--std=c++2a",
                     "-o",
                     "\"${fileDirname}\\${fileBasenameNoExtension}.exe\""
                 ]
